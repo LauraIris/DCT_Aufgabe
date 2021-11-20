@@ -102,8 +102,11 @@ public class DCT_Aufgabe {
                     }
                 }
                 Freq[v][u] = (int) (Math.round((C(u) * C(v) * Summe / 4.0)));
+                
             }
         }
+        
+        
     }
     
     public static void dct_inverse(int[][] Freq, int[][] Bild) {
@@ -132,8 +135,29 @@ public class DCT_Aufgabe {
                 
             }
         }
+        System.out.println("Frequency (DCT) [v][u]:");
+        printBlock(Freq);
+    
+        System.out.println("Bild (iDCT) [y][x]:");
+        printBlock(Bild);
+    }
+    
+    public static void printBlock(int [][] blockValues) {
         
         
+        String line= "_____";
+        //top
+        System.out.print("_________________________________________________\n");
+        for (int row = 0; row < blockValues.length; row++) {
+            //middle
+            System.out.printf("|%4s |%4s |%4s |%4s |%4s |%4s |%4s |%4s |\n", " "," ", " "," "," ", " "," "," ");
+            System.out.print("|");
+            for (int col = 0; col < blockValues[row].length; col++) {
+                System.out.printf("%4.0f |", (double) blockValues[row][col]);
+            }
+            //bottom
+            System.out.printf("\n|%5s|%5s|%5s|%5s|%5s|%5s|%5s|%5s|\n", line, line, line, line,line, line,line,line);
+        }
     }
     
     //======================== Programm Entry Point ===============================
