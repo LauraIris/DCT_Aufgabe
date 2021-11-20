@@ -102,11 +102,8 @@ public class DCT_Aufgabe {
                     }
                 }
                 Freq[v][u] = (int) (Math.round((C(u) * C(v) * Summe / 4.0)));
-                
             }
         }
-        
-        
     }
     
     public static void dct_inverse(int[][] Freq, int[][] Bild) {
@@ -131,7 +128,7 @@ public class DCT_Aufgabe {
                                 Math.cos(((2.0 * y + 1.0) * Math.PI * v) / 16.0);
                     }
                 }
-                Bild[y][x] = (int) Summe / 4;
+                Bild[y][x] = (int) Math.round(Summe / 4);
                 
             }
         }
