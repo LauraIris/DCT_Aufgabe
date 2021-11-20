@@ -118,12 +118,12 @@ public class DCT_Aufgabe {
          */
         // Bildkoeffizient (IDCT)
         
-        for (int x = 0; x < 8; x++) {
-            for (int y = 0; y < 8; y++) {
+        for (int y = 0; y < 8; y++) {
+            for (int x = 0; x < 8; x++) {
                 double Summe = 0.0;
-                for (int v = 0; v < 8; v++) {
-                    for (int u = 0; u < 8; u++) {
-                        Summe = C(u) * C(v) * Freq[v][u] *
+                for (int u = 0; u < 8; u++) {
+                    for (int v = 0; v < 8; v++) {
+                        Summe += C(u) * C(v) * Freq[v][u] *
                                 Math.cos(((2.0 * x + 1.0) * Math.PI * u) / 16.0) *
                                 Math.cos(((2.0 * y + 1.0) * Math.PI * v) / 16.0);
                     }
