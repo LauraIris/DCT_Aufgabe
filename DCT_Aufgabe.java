@@ -49,6 +49,7 @@ public class DCT_Aufgabe {
     //   folgende Anordnung entspricht der Darstellung in der Theorie:
     
     static int[][] Frequenz = {
+            
             //		Frequenzmatrix fuer Test:
             {1200, 23, -142, 77, -191, 415, -10, -239},
             {-18, 32, 46, 50, 68, 3, -19, -19},
@@ -58,9 +59,11 @@ public class DCT_Aufgabe {
             {-75, 79, 16, -40, 93, -37, -7, 7},
             {305, 138, 96, -26, -83, -168, -77, 0},
             {88, -64, 69, 170, -13, 68, -29, -51}};
-    /*
+            
+    
     //	  Vorbereitete leere Frequenzmatrix
-    {1020, 0, 0, 0, 0, 0, 0, 255}, 
+            /*
+    {2040, 0, 0, 0, 0, 0, 0, 0},
     { 0, 0, 0, 0, 0, 0, 0, 0}, 
     { 0, 0, 0, 0, 0, 0, 0, 0}, 
     { 0, 0, 0, 0, 0, 0, 0, 0}, 
@@ -68,8 +71,8 @@ public class DCT_Aufgabe {
     { 0, 0, 0, 0, 0, 0, 0, 0}, 
     { 0, 0, 0, 0, 0, 0, 0, 0}, 
     { 0, 0, 0, 0, 0, 0, 0, 0}};
-     */
     
+    */
     //  Buffer fuer Bild-Pixel: 
     //  Byx ist als Bild[y][x] implementiert.
     
